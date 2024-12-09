@@ -147,3 +147,6 @@ footer{
 .footer_rede a:hover{
     color: #430000;
 }
+.nhero_nav_logo img{
+    width: 4rem;
+}
