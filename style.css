@@ -17,9 +17,11 @@ body{
     display: flex;
     gap: 4rem;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     /* padding: 1.5rem; */
     padding-right: 4rem;
+    padding-left: 2rem;
+
 }
 .nhero_nav_list{
     list-style: none;
@@ -144,4 +146,7 @@ footer{
 }
 .footer_rede a:hover{
     color: #430000;
+}
+.nhero_nav_logo img{
+    width: 4rem;
 }
