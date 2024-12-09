@@ -20,6 +20,8 @@ body{
     justify-content: space-between;
     /* padding: 1.5rem; */
     padding-right: 4rem;
+    padding-left: 2rem;
+
 }
 .nhero_nav_list{
     list-style: none;
