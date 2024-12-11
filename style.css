@@ -166,5 +166,6 @@ footer{
     & .modal-body input{
         border: none;
         outline: none;
+        background-color: #701e1e;
     }
 }
