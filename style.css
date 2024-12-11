@@ -155,4 +155,7 @@ footer{
     & .modal-title{
         color: #ff0000;
     }
+    & .modal-body{
+        display: flex;
+    }
 }
