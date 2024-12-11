@@ -155,7 +155,7 @@ footer{
     & .modal-title{
         color: #ff0000;
     }
-    & .modal-body{
+    & .modal-body fieldset{
         display: flex;
         flex-direction: column;
     }
