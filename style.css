@@ -160,4 +160,7 @@ footer{
         flex-direction: column;
         gap: .5rem;
     }
+    .modal-body label{
+        color: #ff0000;
+    }
 }
