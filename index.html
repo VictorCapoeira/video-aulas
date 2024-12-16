@@ -268,6 +268,45 @@
             // Adicionar evento ao formulário
             commentForm.addEventListener('submit', addComment);
 
+            let totalRatings = 100;
+            let currentAverage = 4.8;
+
+            // Selecionar elementos do DOM
+            const starContainer = document.getElementById('star-container');
+            const averageRatingDisplay = document.getElementById('average-rating');
+            const totalRatingsDisplay = document.getElementById('total-ratings');
+
+            // Atualizar o display da média e total
+            function updateRatingDisplay() {
+              averageRatingDisplay.textContent = currentAverage.toFixed(1);
+              totalRatingsDisplay.textContent = `(${totalRatings} avaliações)`;
+            }
+
+            // Função para lidar com a avaliação
+            function handleRating(event) {
+              const selectedStar = event.target;
+              const ratingValue = parseInt(selectedStar.getAttribute('data-value'), 10);
+
+              if (!ratingValue) return; // Ignorar cliques fora das estrelas
+
+              // Atualizar média e total de avaliações
+              currentAverage = (currentAverage * totalRatings + ratingValue) / (totalRatings + 1);
+              totalRatings++;
+
+              // Atualizar visualmente as estrelas
+              Array.from(starContainer.children).forEach((star, index) => {
+                star.classList.toggle('active', index < ratingValue);
+              });
+
+              // Atualizar o display
+              updateRatingDisplay();
+            }
+
+            // Adicionar evento às estrelas
+            starContainer.addEventListener('click', handleRating);
+
+            // Exibir dados iniciais
+            updateRatingDisplay();
         </script>
     </body>
 </html>
