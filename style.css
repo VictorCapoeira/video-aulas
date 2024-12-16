@@ -265,8 +265,8 @@ footer{
   }
   .rating-container {
     display: inline-block;
-    background-color: #fff;
-    padding: 20px;
+    /* background-color: #fff; */
+    /* padding: 20px; */
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     & .stars {
