@@ -94,6 +94,7 @@ body{
 .container_content_center_volumes_content{
     display: flex;
     gap: 2rem;
+    margin-bottom: 3rem;
 }
 .card{
     flex-basis: calc(28% - 2rem);
