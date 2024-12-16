@@ -181,4 +181,7 @@ footer{
     & .btn_2{
         opacity: .5;
     }
+    & .btn:hover{
+        background-color: #5e0606;
+    }
 }
