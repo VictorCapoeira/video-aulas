@@ -178,4 +178,7 @@ footer{
         border-color: #701e1e;
         background-color: #220404;
     }
+    & .btn_2{
+        opacity: .5;
+    }
 }
