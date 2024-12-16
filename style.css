@@ -236,9 +236,12 @@ footer{
         flex-direction: column;
       }
     & input[type="text"], textarea {
+        background-color: #9c2222ee;
         padding: 10px;
         font-size: 14px;
-        border: 1px solid #ddd;
+        border: none;
+        outline: none;
+        color: white;
         border-radius: 5px;
         margin-bottom: 10px;
       }
