@@ -150,6 +150,9 @@ footer{
 .nhero_nav_logo img{
     width: 4rem;
 }
+.bi-person{
+    color: #ff0000;
+}
 .modal-content{
     border-color: #ff0000;
     background-color: #430000;
