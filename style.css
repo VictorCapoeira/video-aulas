@@ -252,7 +252,7 @@ footer{
     & button {
         padding: 10px 15px;
         font-size: 16px;
-        background-color: #007bff;
+        background-color: #8d0202;
         color: white;
         border: none;
         border-radius: 5px;
@@ -260,6 +260,6 @@ footer{
         transition: background-color 0.3s;
       }
     & button:hover {
-        background-color: #0056b3;
+        background-color: #ff0000;
       }
   }
