@@ -218,5 +218,42 @@
           </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+          // Selecionar elementos do DOM
+            const commentForm = document.getElementById('comment-form');
+            const nameInput = document.getElementById('name-input');
+            const commentInput = document.getElementById('comment-input');
+            const commentsContainer = document.getElementById('comments-container');
+
+            // Função para adicionar um comentário
+            function addComment(event) {
+              event.preventDefault(); // Evitar o recarregamento da página
+              
+              // Obter o nome e o texto do comentário
+              const userName = nameInput.value.trim();
+              const commentText = commentInput.value.trim();
+              
+              if (userName === "" || commentText === "") {
+                alert("Por favor, preencha todos os campos.");
+                return;
+              }
+
+              // Criar o elemento do comentário
+              const commentElement = document.createElement('div');
+              commentElement.classList.add('comment');
+              commentElement.innerHTML = `<strong>${userName}:</strong> ${commentText}`;
+
+              // Adicionar o comentário ao container
+              commentsContainer.appendChild(commentElement);
+
+              // Limpar os campos do formulário
+              nameInput.value = "";
+              commentInput.value = "";
+            }
+
+            // Adicionar evento ao formulário
+            commentForm.addEventListener('submit', addComment);
+
+        </script>
     </body>
 </html>
