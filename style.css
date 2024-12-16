@@ -173,4 +173,7 @@ footer{
         background-color: #701e1e;
         color: whitesmoke;
     }
+    & .btn{
+        color: #ff0000;
+    }
 }
