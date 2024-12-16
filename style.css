@@ -175,5 +175,6 @@ footer{
     }
     & .btn{
         color: #ff0000;
+        border-color: #701e1e;
     }
 }
