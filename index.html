@@ -128,6 +128,20 @@
                   <a href="#" class="container_content_left_content_link">Portugues</a>
                   <a href="#" class="container_content_left_content_link">Espanhol</a>
                 </div>
+                <div class="container_content_left_content rating-container">
+                  <h2 class="container_content_left_content_subtitle">Avaliação</h2>
+                  <div id="star-container" class="stars">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+                  </div>
+                  <div class="rating-info">
+                    <p id="average-rating">4.8</p>
+                    <p id="total-ratings">(100 avaliações)</p>
+                  </div>
+                </div>
               </aside>
               <div class="container_content_center">
                 <div class="container_content_center_review">
@@ -254,6 +268,45 @@
             // Adicionar evento ao formulário
             commentForm.addEventListener('submit', addComment);
 
+            let totalRatings = 100;
+            let currentAverage = 4.8;
+
+            // Selecionar elementos do DOM
+            const starContainer = document.getElementById('star-container');
+            const averageRatingDisplay = document.getElementById('average-rating');
+            const totalRatingsDisplay = document.getElementById('total-ratings');
+
+            // Atualizar o display da média e total
+            function updateRatingDisplay() {
+              averageRatingDisplay.textContent = currentAverage.toFixed(1);
+              totalRatingsDisplay.textContent = `(${totalRatings} avaliações)`;
+            }
+
+            // Função para lidar com a avaliação
+            function handleRating(event) {
+              const selectedStar = event.target;
+              const ratingValue = parseInt(selectedStar.getAttribute('data-value'), 10);
+
+              if (!ratingValue) return; // Ignorar cliques fora das estrelas
+
+              // Atualizar média e total de avaliações
+              currentAverage = (currentAverage * totalRatings + ratingValue) / (totalRatings + 1);
+              totalRatings++;
+
+              // Atualizar visualmente as estrelas
+              Array.from(starContainer.children).forEach((star, index) => {
+                star.classList.toggle('active', index < ratingValue);
+              });
+
+              // Atualizar o display
+              updateRatingDisplay();
+            }
+
+            // Adicionar evento às estrelas
+            starContainer.addEventListener('click', handleRating);
+
+            // Exibir dados iniciais
+            updateRatingDisplay();
         </script>
     </body>
 </html>

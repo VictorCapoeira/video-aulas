@@ -263,3 +263,38 @@ footer{
         background-color: #ff0000;
       }
   }
+  .rating-container {
+    display: inline-block;
+    /* background-color: #fff; */
+    /* padding: 20px; */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    & .stars {
+        display: flex;
+        justify-content: center;
+        margin-bottom: .5rem;
+        font-size: 30px;
+      }
+    & .stars span {
+        cursor: pointer;
+        color: #ddd; /* Cor inicial das estrelas */
+        transition: color 0.3s;
+      }
+    & .stars span.active {
+        color: #ffc107; /* Cor das estrelas ativas */
+      }
+    & .stars span:hover ~ span {
+        color: #ddd; /* Evita colorir estrelas posteriores ao hover */
+      }
+    & .stars span:hover,
+    .stars span:hover ~ span {
+      color: #ffc107; /* Efeito de hover nas estrelas */
+    }
+    & .rating-info {
+        font-size: 18px;
+        color: #ffffff;
+      }
+    & .rating-info p {
+        margin: 5px 0;
+      }
+  }
