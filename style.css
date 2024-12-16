@@ -150,3 +150,48 @@ footer{
 .nhero_nav_logo img{
     width: 4rem;
 }
+.bi-person{
+    color: #ff0000;
+}
+.modal-content{
+    border-color: #ff0000;
+    background-color: #430000;
+    & .modal-title{
+        color: #ff0000;
+    }
+    & .modal-header, .modal-footer{
+        border-color: #ff0000;
+    }
+    & .modal-body fieldset{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    & .modal-body label{
+        color: #ff0000;
+    }
+    & .modal-body input{
+        border: none;
+        outline: none;
+        background-color: #701e1e;
+        color: whitesmoke;
+    }
+    & .modal-footer{
+        display: flex;
+        gap: 1rem;
+    }
+    & .btn{
+        margin: 0;
+        flex-grow: 1;
+        flex-basis: calc(50% -1rem);
+        color: #ff0000;
+        border-color: #701e1e;
+        background-color: #220404;
+    }
+    & .btn_2{
+        opacity: .5;
+    }
+    & .btn:hover{
+        background-color: #5e0606;
+    }
+}

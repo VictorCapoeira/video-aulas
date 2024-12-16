@@ -26,6 +26,37 @@
                       <li class="nav-item">
                         <a class="nav-link" href="#">Fórum de discussões</a>
                       </li>
+                      <li class="nav-item">
+                        <button type="button" class="btn  nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          <i class="bi bi-person"></i>
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Faça login</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <form action="get">
+                                  <fieldset>
+                                    <label for="User">User ou E-mail: </label>
+                                    <input type="email" name="User" id="User">
+                                    <label for="Senha">Senha: </label>
+                                    <input type="password" name="Senha" id="Senha">
+                                  </fieldset>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn_2" data-bs-dismiss="modal">Criar cadastro</button>
+                                <button type="button" class="btn">Login</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
                     </ul>
                   </div>
                 </div>
