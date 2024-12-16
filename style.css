@@ -210,11 +210,11 @@ footer{
     & #comments-container {
         margin-bottom: 20px;
         padding: 10px;
-        border: 1px solid #ddd;
+        border: 1px solid #ff000038;
         border-radius: 5px;
         max-height: 300px;
         overflow-y: auto;
-        background-color: #f5f5f5;
+        background-color: #701e1e86;
       }
     & .comment {
         margin-bottom: 15px;
