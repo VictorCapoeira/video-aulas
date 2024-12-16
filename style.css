@@ -94,6 +94,7 @@ body{
 .container_content_center_volumes_content{
     display: flex;
     gap: 2rem;
+    margin-bottom: 3rem;
 }
 .card{
     flex-basis: calc(28% - 2rem);
@@ -195,3 +196,70 @@ footer{
         background-color: #5e0606;
     }
 }
+.comment-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #220404;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #ddd;
+    & h2 {
+        margin-bottom: 20px;
+        color: #ff0000;
+      }
+    & #comments-container {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ff000038;
+        border-radius: 5px;
+        max-height: 300px;
+        overflow-y: auto;
+        background-color: #701e1e86;
+      }
+    & .comment {
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #9c2222ee;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        word-wrap: break-word;
+      }
+      
+    & .comment strong {
+        color: #ffffff;
+        display: block;
+        margin-bottom: 5px;
+      }
+    & form {
+        display: flex;
+        flex-direction: column;
+      }
+    & input[type="text"], textarea {
+        background-color: #9c2222ee;
+        padding: 10px;
+        font-size: 14px;
+        border: none;
+        outline: none;
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      
+    & textarea {
+        resize: none;
+      }
+    & button {
+        padding: 10px 15px;
+        font-size: 16px;
+        background-color: #8d0202;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+    & button:hover {
+        background-color: #ff0000;
+      }
+  }
