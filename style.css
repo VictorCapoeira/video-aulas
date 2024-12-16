@@ -156,6 +156,9 @@ footer{
     & .modal-title{
         color: #ff0000;
     }
+    & .modal-header, .modal-footer{
+        border-color: #ff0000;
+    }
     & .modal-body fieldset{
         display: flex;
         flex-direction: column;
