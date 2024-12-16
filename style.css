@@ -272,7 +272,7 @@ footer{
     & .stars {
         display: flex;
         justify-content: center;
-        margin-bottom: 10px;
+        margin-bottom: .5rem;
         font-size: 30px;
       }
     & .stars span {
@@ -292,7 +292,7 @@ footer{
     }
     & .rating-info {
         font-size: 18px;
-        color: #555;
+        color: #ffffff;
       }
     & .rating-info p {
         margin: 5px 0;
