@@ -151,6 +151,7 @@ footer{
     width: 4rem;
 }
 .modal-content{
+    border-color: #ff0000;
     background-color: #430000;
     & .modal-title{
         color: #ff0000;
