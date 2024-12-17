@@ -78,6 +78,9 @@ body{
 .container_content_left_content_link{
     color: #ff0000;
 }
+.container_content_left_content_link:hover{
+    color: #570808;
+}
 .container_content_center_review_title{
     color: aliceblue;
     font-weight: 800;
