@@ -75,6 +75,9 @@ body{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+.container_content_left_content_link{
+    color: #ff0000;
+}
 .container_content_center_review_title{
     color: aliceblue;
     font-weight: 800;
