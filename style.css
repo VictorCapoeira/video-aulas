@@ -115,6 +115,8 @@ body{
 .card-text{
     padding-left: 2rem;
     padding-right: 2rem;
+    letter-spacing: 1.5px;
+    flex-grow: 1;
 }
 .btn{
     border: 1px solid #220404;
